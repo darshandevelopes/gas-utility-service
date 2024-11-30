@@ -1,0 +1,17 @@
+{% extends 'customer_service/base.html' %}
+
+{% block content %}
+<h1 class="text-3xl font-bold mb-6">Your Service Requests</h1>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    {% for request in service_requests %}
+    <div class="bg-white p-4 rounded shadow">
+        <h2 class="text-xl font-semibold mb-2">{{ request.get_request_type_display }}</h2>
+        <p class="text-gray-600 mb-2">Status: {{ request.get_status_display }}</p>
+        <p class="text-gray-600 mb-2">Submitted: {{ request.created_at|date:"F d, Y" }}</p>
+        <a href="{% url 'request_detail' request.id %}" class="text-blue-600 hover:underline">View Details</a>
+    </div>
+    {% empty %}
+    <p class="col-span-3 text-center text-gray-600">You have no service requests.</p>
+    {% endfor %}
+</div>
+{% endblock %}

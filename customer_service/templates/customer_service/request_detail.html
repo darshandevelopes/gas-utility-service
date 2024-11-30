@@ -1,0 +1,15 @@
+{% extends 'customer_service/base.html' %}
+
+{% block content %}
+<h1 class="text-3xl font-bold mb-6">Service Request Details</h1>
+<div class="bg-white p-6 rounded shadow">
+    <h2 class="text-2xl font-semibold mb-4">{{ service_request.get_request_type_display }}</h2>
+    <p class="mb-2"><strong>Status:</strong> {{ service_request.get_status_display }}</p>
+    <p class="mb-2"><strong>Submitted:</strong> {{ service_request.created_at|date:"F d, Y H:i" }}</p>
+    <p class="mb-2"><strong>Last Updated:</strong> {{ service_request.updated_at|date:"F d, Y H:i" }}</p>
+    <p class="mb-4"><strong>Description:</strong> {{ service_request.description }}</p>
+    {% if service_request.attachment %}
+    <p class="mb-2"><strong>Attachment:</strong> <a href="{{ service_request.attachment.url }}" class="text-blue-600 hover:underline" target="_blank">Download</a></p>
+    {% endif %}
+</div>
+{% endblock %}

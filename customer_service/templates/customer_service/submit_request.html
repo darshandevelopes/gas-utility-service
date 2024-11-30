@@ -1,0 +1,21 @@
+{% extends 'customer_service/base.html' %}
+
+{% block content %}
+<h1 class="text-3xl font-bold mb-6">Submit a Service Request</h1>
+<form method="post" enctype="multipart/form-data" class="bg-white p-6 rounded shadow">
+    {% csrf_token %}
+    <div class="mb-4">
+        <label for="{{ form.request_type.id_for_label }}" class="block text-gray-700 font-bold mb-2">Request Type</label>
+        {{ form.request_type }}
+    </div>
+    <div class="mb-4">
+        <label for="{{ form.description.id_for_label }}" class="block text-gray-700 font-bold mb-2">Description</label>
+        {{ form.description }}
+    </div>
+    <div class="mb-4">
+        <label for="{{ form.attachment.id_for_label }}" class="block text-gray-700 font-bold mb-2">Attachment</label>
+        {{ form.attachment }}
+    </div>
+    <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Submit Request</button>
+</form>
+{% endblock %}

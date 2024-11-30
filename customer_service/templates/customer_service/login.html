@@ -1,0 +1,19 @@
+{% extends 'customer_service/base.html' %}
+
+{% block content %}
+<div class="max-w-md mx-auto">
+    <h1 class="text-3xl font-bold mb-6 text-center">Login</h1>
+    <form method="post" class="bg-white p-6 rounded shadow">
+        {% csrf_token %}
+        <div class="mb-4">
+            <label for="id_username" class="block text-gray-700 font-bold mb-2">Username</label>
+            <input type="text" name="username" id="id_username" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        </div>
+        <div class="mb-6">
+            <label for="id_password" class="block text-gray-700 font-bold mb-2">Password</label>
+            <input type="password" name="password" id="id_password" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Login</button>
+    </form>
+</div>
+{% endblock %}
