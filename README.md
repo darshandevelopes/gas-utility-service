@@ -15,7 +15,7 @@ You can access the live version of the project at:
   - Username: `darshan`
   - Password: `Pass@123`
 - **Support Personnel**:
-  - Username: `admin`
+  - Username: `support-personnel`
   - Password: `Pass@123`
 
 ---
@@ -123,3 +123,17 @@ python manage.py runserver 9000
 ```
 
 Visit http://127.0.0.1:9000 in your browser to access the application.
+
+## Output
+![image](https://github.com/user-attachments/assets/3fa0f2dd-2806-493f-a8d2-eeec78003466)
+![image](https://github.com/user-attachments/assets/0c4b43d3-4ec2-4a39-aa3c-4dd99a6b4175)
+![image](https://github.com/user-attachments/assets/5bf3f085-963c-4aed-8af2-22c6c4bb4f3a)
+![image](https://github.com/user-attachments/assets/1fe24296-7e89-4efa-b586-76538fff1e6b)
+![image](https://github.com/user-attachments/assets/7186fc48-c4ed-470b-a6c5-e50d04d227a8)
+![image](https://github.com/user-attachments/assets/985170cd-376c-4ede-bc3b-8fc2931607ad)
+![image](https://github.com/user-attachments/assets/3b8d8dcb-c0d1-4bab-838c-da45aa6dd909)
+
+
+
+
+
