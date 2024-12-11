@@ -2,13 +2,6 @@
 
 This is a Django-based web application designed to streamline the customer service process for a gas utility company. The application allows customers to submit and track service requests, while providing support personnel with tools to manage and resolve these requests.
 
-## Live Application
-
-You can access the live version of the project at:
-
-- **Customer Login**: [http://108.61.209.123:9000/](http://108.61.209.123:9000/)
-- **Support Login**: [http://108.61.209.123:9000/admin](http://108.61.209.123:9000/admin)
-
 ### Login Credentials:
 
 - **Customer**:
